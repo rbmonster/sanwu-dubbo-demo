@@ -1,0 +1,16 @@
+
+dubbo:
+  application:
+    name: dubbo-hystrix-demo
+  registry:
+    id: my-consumer
+    address: zookeeper://localhost:2181?client=curator
+  qosEnable: false
+
+spring:
+  aop:
+    proxyTargetClass: true
+
+ribbon:
+  eureka:
+    enabled: false
